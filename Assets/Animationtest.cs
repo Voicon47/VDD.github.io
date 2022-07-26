@@ -45,6 +45,13 @@ public class Animationtest : MonoBehaviour
          animator.SetBool("shitdown",false);  
          animator.SetBool("lie",false); 
        }
-
+       if (Input.GetMouseButtonDown(0)){
+          animator.SetTrigger("Attack");
+       }if (Input.GetMouseButtonDown(1)){
+          animator.SetTrigger("Attack2");
+       }if (Input.GetMouseButtonDown(2)){
+          animator.SetTrigger("Attack3");
+       }
+       
     }
 }
